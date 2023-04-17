@@ -4,30 +4,214 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>login</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>Coffee shop Tia Rosa</title>
     </head>
-    <body>
-        <div class="main-login">
-            <div class="left-login">
-                <h1>Faça seu Login</h1>
-            </div>
-            <div class="right-login">
-                <div class="card-login">
-                    <h1>Login</h1>
-                    <div class="text-field">
-                        <label for="usuario">usuario</label>
-                        <input type="text" name="usuario" placeholder="usuario">
-                    </div>
-                    <div class="text-field">
-                        <label for="senha">senha</label>
-                        <input type="password" name="senha" placeholder="*********">
-                    </div>
-                    <button class="btn-login">Login</button>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="icons/coffee-cup.png" alt="" width="50" height="50">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre Nós</a>
+            <a href="#menu">Menu</a>
+            <a href="#shop">Compras</a>
+            <a href="#contact">Contatos</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn">
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="pesquise aqui">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="icons/frapuccinochocolate.png" alt="" width="67" height="67">
+                <div class="content">
+                    <h3>Frapuccino de Chocolate</h3>
+                    <div class="price">R$:15,00</div>
                 </div>
             </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="icons/matcha.png" alt="" width="67" height="67">
+                <div class="content">
+                    <h3>Matcha</h3>
+                    <div class="price">R$:13,00</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="icons/brownie.png" alt="" width="67" height="67">
+                <div class="content">
+                    <h3>Brownie</h3>
+                    <div class="price">R$:8,00</div>
+                </div>
+            </div>
+            <a href="#" class="btn">check out now</a>
         </div>
+    </header>
+        
+    <body>
+        <!-- home section starts -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>O melhor sabor do café artesanal</h3>
+        <p>Aqui voce podera encontrar o melhor do café brasileiro e suas adaptações</p>
+        <a href="#" class="btn">Venha tomar o seu!!</a>
+    </div>
+</section>
+        <!-- home section ends -->
+
+        <!-- about section starts -->
+<section class="about" id="about">
+    <h1 class="heading"> <span>Sobre</span> Nós </h1>
+    <div class="row">
+        <div class="image">
+            <img src="icons/cafe_cna.jpg" alt=""  width="500" height="500">
+        </div>
+        <div class="content">
+            <h3>Quem somos ?</h3>
+            <p>Somos uma cafeteria que esta no mercado a 15 anos, contamos sempre com inovação dos nossos sabores e equipamentos para atender da melhor maneira nossos clientes.</p>
+            <p>Contamos com diversos sabores de bebidas com nosso delicioso café, sem falar dos nossos deliciosos chás e alguns lanchinhos!!</p>
+            <a href="#" class="btn">Saiba mais</a>
+        </div>
+    </div>
+</section>
+        <!-- about section ends -->
+
+        <!-- menu section starts -->
+
+        <section class="menu" id="menu">
+            <h1 class="heading">Nosso <span>Menu</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/cafeexpresso.png" alt="" width="200" height="200">
+                    <h3>Café Expresso</h3>
+                    <div class="price">R$:9,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/caffecomleiteecanela.png" alt="" width="200" height="200">
+                    <h3>Café Latte com Leite e canela</h3>
+                    <div class="price">R$:12,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/cafelattecaramel.png" alt="" width="200" height="200">
+                    <h3>Café Latte Caramel</h3>
+                    <div class="price">R$:14,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/capuccinoexpresso.png" alt="" width="200" height="200">
+                    <h3>Capuccino Expresso</h3>
+                    <div class="price">R$:11,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/frapuccinochocolate.png" alt="" width="200" height="200">
+                    <h3>Frapuccino de Chocolate</h3>
+                    <div class="price">R$:15,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/matchagelatto.png" alt="" width="200" height="200">
+                    <h3>Matcha Gelatto</h3>
+                    <div class="price">R$:16,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/matcha.png" alt="" width="200" height="200">
+                    <h3>Matcha</h3>
+                    <div class="price">R$:13,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/chapreto.png" alt="" width="200" height="200">
+                    <h3>Cha Preto</h3>
+                    <div class="price">R$:12,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/chatailandes.png" alt="" width="200" height="200">
+                    <h3>Cha Thailandes</h3>
+                    <div class="price">R$:15,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/chaturco.png" alt="" width="200" height="200">
+                    <h3>Cha Turco</h3>
+                    <div class="price">R$:15,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/brownie.png" alt="" width="200" height="200">
+                    <h3>Brownie</h3>
+                    <div class="price">R$:8,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/paodequeijo.png" alt="" width="200" height="200">
+                    <h3>Pão de Queijo</h3>
+                    <div class="price">R$:4,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/croisaint.png" alt="" width="200" height="200">
+                    <h3>Croisaint</h3>
+                    <div class="price">R$:6,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="icons/donut.png" alt="" width="200" height="200">
+                    <h3>Donuts</h3>
+                    <div class="price">R$:9,00</div>
+                    <a href="#" class="btn">Adicionar ao carrinho</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- menu section ends -->
+
     </body>
     <footer>
 
     </footer>
+    <script src="main.js"></script>
 </html>
